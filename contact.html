@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashnova</title>
+    <link rel="icon" href="picture/img1.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>FASHNOVA</h1>
+        
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="sideNavbar()">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Side Navbar -->
+    <div class="side-navbar" id="sideNavbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa fa-times" id="closeBtn"></i>
+        </p>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+        const menuBtn = document.querySelector('.navbar-menu-toggle');
+        const sideNavbar = document.getElementById('sideNavbar');
+        const closeBtn = document.getElementById('closeBtn');
+
+        menuBtn.addEventListener('click', () => {
+            sideNavbar.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            sideNavbar.classList.remove('active');
+        });
+    </script>
+
+    <div class="contact-wrapper">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Drop us a message below.</p>
+        </div>
+        <form class="contact-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="3" placeholder="Message" required></textarea>
+            <button type="submit">SEND</button>
+        </form>
+    </div>
+</div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2>Fashnova</h2>
+                <p>we don’t just sell clothes—we craft style experiences. Built for every body, every vibe, and every moment. Join the movement. Wear the difference. Be the first to know about drops, deals, and designer edits.
+                    Follow us on Instagram, Facebook & Pinterest. </p>
+                    <div class="social-icons">
+                        <a class="social-icons" href="#"><i class="fa fa-instagram" style="color: whitesmoke";"></i></a>
+                        <a class="social-icons" href="#"><i class="fa fa-twitter" style="color: whitesmoke";></i></a>
+                        <a class="social-icons" href="#"><i class="fa fa-facebook" style="color: whitesmoke";></i></a>
+                    </div>
+            </div>
+        </div>
+        <p>@fashnova.com</p>
+    </div>
+
+    <script src="collection.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashnova</title>
+    <link rel="icon" href="picture/img1.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>FASHNOVA</h1>
+        
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="sideNavbar()">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Side Navbar -->
+    <div class="side-navbar" id="sideNavbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa fa-times" id="closeBtn"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="">Home</a></p>
+            <p class="side-navbar-link"><a href="">Collections</a></p>
+            <p class="side-navbar-link"><a href="">Contact</a></p>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+        const menuBtn = document.querySelector('.navbar-menu-toggle');
+        const sideNavbar = document.getElementById('sideNavbar');
+        const closeBtn = document.getElementById('closeBtn');
+
+        menuBtn.addEventListener('click', () => {
+            sideNavbar.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            sideNavbar.classList.remove('active');
+        });
+    </script>
+
+    <!--Header-->
+    <div class="header">
+        <div>
+            <h1>Level up your style</h1>
+            <p>with our stunning collections</p>
+            <button class="header-button">Shop now</button>
+            </div>
+            <div>
+            <img class="header-image" src="picture/img2.jpeg" alt="">
+        </div>
+    </div>
+
+    <!--Service-->
+    <div class="service">
+        <div class="service-container-1">
+            <div>
+                <h2>We provide best</h2>
+                <h2>Customer Experience</h2>
+            </div>
+            <div>
+                <p>|| We ensure that our customer have the best shopping experience </p>
+            </div>
+        </div>
+
+        <div class="service-container-2">
+            <div>
+                <p>☻</p>
+                <h4>Satisfaction Guarantee</h4>
+                <p>Our clothes don’t just fit your body—they fit your story. Wear your power. Inclusive sizing. Gender-fluid options. Beauty in every body.</p>
+            </div>
+
+            <div>
+                <p>☻</p>
+                <h4>New arrival everyday</h4>
+                <p>New styles. Non-stop. Your next favorite outfit just landed—again. Come back tomorrow, it’ll be a whole new vibe.</p>
+            </div>
+
+            <div>
+                <p>☻</p>
+                <h4>Fast and free shipping</h4>
+                <p>No delays. No fees. Just your style—delivered lightning quick. Blink and it's on your doorstep. Because great style shouldn't come with shipping fees.</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+    <h2 style="padding: 20px;">New Arrival</h2>
+
+    <div class="new-arrival">
+        <div class="new-arrival-container">
+            <img class="header-image-1" src="picture/img3.jpg" alt="">
+            <button>shop now➡️</i></button>
+        </div>
+
+        <div class="new-arrival-container">
+            <img class="header-image-1" src="picture/img4.png" alt="">
+            <button>shop now➡️</i></button>
+        </div>
+
+        <div class="new-arrival-container">
+            <img class="header-image-1" src="picture/img5.jpeg" alt="">
+            <button>shop now➡️</button>
+        </div>
+
+        <div class="new-arrival-container">
+            <img class="header-image-1" src="picture/img6.jpeg" alt="">
+            <button>shop now➡️</i></button>
+        </div>
+    </div>
+    </div>
+
+    <div>
+        <h2 style="padding: 20px;">Most wanted</h2>
+    
+        <div class="new-arrival">
+            <div class="new-arrival-container">
+                <img class="header-image-1" src="picture/img7.jpg" alt="">
+                <button>shop now➡️</i></button>
+            </div>
+    
+            <div class="new-arrival-container">
+                <img class="header-image-1" src="picture/img8.jpg" alt="">
+                <button>shop now➡️</i></button>
+            </div>
+    
+            <div class="new-arrival-container">
+                <img class="header-image-1" src="picture/img9.jpg" alt="">
+                <button>shop now➡️</button>
+            </div>
+    
+            <div class="new-arrival-container">
+                <img class="header-image-1" src="picture/img10.jpg" alt="">
+                <button>shop now➡️</i></button>
+            </div>
+        </div>
+        </div>
+
+        <!--news-->
+        <div class="news">
+            <h2>Join our NewsLetter</h2>
+            <p>Signup for our email NewsLetter to get exclusive discounts and updates and more......</p>
+            <div>
+                <input type="text" class="search">
+            </div>
+            <div>
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2>Fashnova</h2>
+                <p>we don’t just sell clothes—we craft style experiences. Built for every body, every vibe, and every moment. Join the movement. Wear the difference. Be the first to know about drops, deals, and designer edits.
+                    Follow us on Instagram, Facebook & Pinterest. </p>
+                    <div class="social-icons">
+                        <a class="social-icons" href="#"><i class="fa fa-instagram" style="color: whitesmoke";"></i></a>
+                        <a class="social-icons" href="#"><i class="fa fa-twitter" style="color: whitesmoke";></i></a>
+                        <a class="social-icons" href="#"><i class="fa fa-facebook" style="color: whitesmoke";></i></a>
+                    </div>
+            </div>
+        </div>
+        <p>@fashnova.com</p>
+    </div>
+</body>
+</html>

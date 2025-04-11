@@ -1,0 +1,372 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #810117;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+    color: #810117;
+}
+
+.navbar-menu-toggle {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #810117;
+}
+
+/* Side Navbar Base */
+.side-navbar {
+    background: linear-gradient(to bottom, #141E30, #243B55);
+    width: 60%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    padding: 20px;
+    color: white;
+    transition: 2s;
+    z-index: 1000;
+}
+
+/* Slide In */
+.side-navbar.active {
+    left: 0;
+}
+
+.side-navbar-link {
+    margin-bottom: 20px;
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.side-navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.header-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: black;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.header-image {
+    width: 350px;
+    height: 350px;
+}
+
+.header-image-1{
+    width: 150px;
+    height: 150px;
+}
+
+
+.service{
+    padding: 20px;
+}
+
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-container-2 div{
+    background-color:rgb(172, 169, 169);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 80%;
+    left: 2%;
+    border-radius: 10PX;
+    border: none;
+    border-color: antiquewhite;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 2px;
+}
+
+.news button{
+    margin-top: 10px;
+    color: azure;
+    background-color: rgb(18, 16, 19);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #243B55;
+    color: white
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px; /* increased spacing */
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+.product-section{
+    margin-top: 20px;
+}
+
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100px;
+}
+
+.product-search input:focus{
+    outline: none;
+} 
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: #f1f1ff;
+}
+
+.products-box {
+    background-color: white;
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+}
+
+.products-box:hover {
+    transform: scale(1.05);
+}
+
+.products-box img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.products-box p {
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: #333;
+    font-size: 16px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image {
+    height: 220px; /* adjust based on your tallest image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-image img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* CONTACT FORM STYLE */
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #77c9ff, #0b1d26);
+    min-height: 100px;
+    box-sizing: border-box;
+}
+
+.contact-form {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 35px;
+    border-radius: 10px;
+    max-width: 370px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #ccc;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-bottom: 2px solid #00bfff;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #00a3cc;
+}
+
+@media screen and (max-width: 400px) {
+    .contact-form {
+        padding: 25px;
+    }
+}
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width:700px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    .service-container-1{
+        display: none;
+    }
+    
+    .service-container-2{
+        flex-direction: column;
+    }
+}
